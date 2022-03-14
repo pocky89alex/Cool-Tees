@@ -6,4 +6,3 @@ urlpatterns = [
     path('add/', views.PostAdd.as_view(), name='post_add'),
     path('delete/<int:pk>/', views.PostDelete.as_view(), name='post_delete'),
 ]
-uhbknjkk
