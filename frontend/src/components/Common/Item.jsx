@@ -46,8 +46,7 @@ const Item = ({ item }) => {
                 <div className="item-image">
                     <img src={item.image} alt="Items" />
                 </div>
-            </div>
-            <div className="item-bottom">
+                 <div className="item-bottom">
                 <div className="item-price">
                     <h5>{item.name}</h5>
                     <p>${item.price}</p>
@@ -68,6 +67,8 @@ const Item = ({ item }) => {
                     </button>
                 )}
             </div>
+            </div>
+           
         </>
     );
 };

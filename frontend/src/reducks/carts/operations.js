@@ -8,7 +8,6 @@ import {
 import { push } from "connected-react-router";
 
 const api = new API();
-const CARTS_KEY = "CARTS_KEY";
 
 export const fetchCarts = () => {
   return async (dispatch) => {

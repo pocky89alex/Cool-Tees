@@ -25,7 +25,7 @@ const CartItem = ({ cart, quantity, cartId }) => {
     return (
         <>
             <div className="circle">
-                <img src={'https://res.cloudinary.com/www-techis-io/' + cart.image} />
+                <img src={'https://res.cloudinary.com/dvcqt0fz8/' + cart.image} />
             </div>
             <h3>{cart.name}</h3>
             <h6>{quantity}</h6>

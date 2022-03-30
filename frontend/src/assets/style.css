@@ -113,11 +113,22 @@ hr {
 .item-container .item-grid {
     display: grid;
     grid-template-columns: auto auto auto auto;
+    margin: 0 auto;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    overscroll-behavior: contain;
+    scroll-snap-type: x proximity;
+    scroll-padding-inline-start: 10px;
+}
+.item-container .item{
+    margin-left: 10px;
 }
 .item-container .item-grid .item-background {
-    background-color: rgb(235, 235, 235, 70%);
     width: 250px;
-    height: 250px;
+    height: 370px;
+}
+.item-container .item-grid .item-background .item-image{
+    background-color: rgb(235, 235, 235, 70%);
 }
 .item-container .item-grid .item-background .item-image img {
     width: 200px;
@@ -125,11 +136,11 @@ hr {
     padding: 30px 30px;
 }
 .item-container .item-grid .item-bottom {
-    margin: 20px 0px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 70%;
+    width: 90%;
 }
 .item-container .item-grid .item-bottom button {
     background-color: #59af0f;
@@ -143,6 +154,7 @@ hr {
     padding: 5px 15px;
     border: 0;
     border-radius: 5px;
+    white-space: nowrap;
 }
 #minus {
     padding: 0px 3px;
@@ -162,7 +174,7 @@ hr {
     }
     .item-container .item-grid .item .item-background {
         width: 140px;
-        height: 200px;
+        height: 300px;
     }
     .item-container .item-grid .item .item-background .item-image img {
         height: 150px;
