@@ -13,7 +13,7 @@ const ThankYou = () => {
     return (
         <div>
             <div class="box">
-                <p>Thank you for your ordering</p>
+                <p>Thank you forordering</p>
             </div>
 
             <div class="message">
