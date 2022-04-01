@@ -16,7 +16,7 @@ export default function Footer({ price }) {
         <footer>
             {key !== null && (
                 <div class="foot">
-                    <h2>total: ${price}</h2>
+                    <h2>total: ${Math.round(price)}</h2>
                     {showCheckoutButton ? (
                         <a href="/cart">
                             <button class="btn">Check Your Cart</button>
