@@ -150,6 +150,9 @@ hr {
     border-radius: 5px;
     white-space: nowrap;
 }
+span#count {
+    padding: 0px 10px;
+}
 #minus {
     padding: 0px 3px;
 }
