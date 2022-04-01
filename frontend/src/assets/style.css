@@ -141,6 +141,7 @@ hr {
     color: #fff;
     padding: 5px 5px;
     border: 0;
+    white-space:nowrap;
 }
 .item-container .item-grid .item-bottom .added-cart {
     background-color: #59af0f;
@@ -158,6 +159,9 @@ span#count {
 }
 #plus {
     padding: 0px 3px;
+}
+.product-heading h2{
+    margin: 10px 100px;
 }
 /***************************
 ****Media Screen
@@ -189,6 +193,15 @@ span#count {
     .item-container .item-grid .item-bottom .added-cart {
             padding: 0px 10px;
     }
+    span#count {
+        padding: 0px 1px;
+    }
+    .heading-sign-in h2{
+        font-size:22px;
+    }
+    .popup .popup-preview {
+        margin: 0px;
+    }
 }
 @media screen and (max-width: 1200px) and (min-width: 751px) {
     .item-container {
@@ -207,7 +220,7 @@ span#count {
     }
     .item-container .item-grid .item .item-background {
         width: 200px;
-        height: 250px;
+        height: 350px;
     }
     .item-container .item-grid .item .item-background .item-image img {
         height: 200px;
@@ -219,7 +232,7 @@ span#count {
         font-size: 10px;
     }
     .item-container .item-grid .item-bottom {
-        width: 65%;
+        width: 85%;
     }
 }
 @media screen and (max-width: 280px) {
@@ -237,6 +250,22 @@ span#count {
     .item-container .item-grid .item-bottom .added-cart {
         font-size: 8px;
     }
+    .sign-up-bottom a{
+        white-space: nowrap;
+    }
+}
+@media screen and (max-width: 380px){
+    .text p {
+    font-size: 20px;
+    position: absolute;
+    bottom:-20px;
+    white-space:nowrap;
+    }
+    #terms{
+        width: 16%;
+    }
+
+
 }
 /******************************
 *******Footer
@@ -498,10 +527,10 @@ button.number {
 *******Sign In
 *******************************/
 .gradient {
+    position: fixed;
     width: 100%;
-    height: 1500px;
+    height: 100%;
     background-color: rgba(0, 0, 0, 50%);
-    position: absolute;
     top: 0;
 }
 .popup {
@@ -589,8 +618,7 @@ button.number {
     .popup .popup-inner {
         top: 5%;
         left: 12vw;
-        width: 70%;
-        margin: 0px 20px;
+        width: 95%;
     }
     .popup-input {
         padding: 14%;
@@ -617,9 +645,7 @@ button.number {
     
 }
 @media screen and (min-width: 501px) and (max-width: 750px) {
-    .gradient {
-        height: 1200px;
-    }
+
     .popup .popup-inner {
         top: 5%;
         left: 12vw;
@@ -651,9 +677,7 @@ button.number {
    
 }
 @media screen and (min-width:751px) and (max-width: 1200px) {
-    .gradient {
-        height: 1500px;
-    }
+
     .popup .popup-inner {
         top: 5%;
         left: 12vw;
