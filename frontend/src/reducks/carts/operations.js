@@ -1,6 +1,7 @@
 import API from "../../API";
 import {
   addCartAction,
+  addRecomendedCartAction,
   fetchCartItemsAction,
   increaseCartAction,
   decreaseCartAction,
@@ -8,6 +9,7 @@ import {
 import { push } from "connected-react-router";
 
 const api = new API();
+const CARTS_KEY = "CARTS_KEY";
 
 export const fetchCarts = () => {
   return async (dispatch) => {
@@ -64,7 +66,7 @@ export const increaseCart = (cart_id) => {
 export const decreaseCart = (cart_id) => {
   return async (dispatch, getState) => {
     let prevCarts = getState().carts.list;
-    let matchedCarts = prevCarts.filter((cart) => cart.id == cart_id);
+    let matchedCarts = prevCarts.filter((cart) => cart.id === cart_id);
     let nextSelectedCount = matchedCarts[0].quantity - 1;
     if (nextSelectedCount > 0) {
       // if quantity is more than 0, update
@@ -96,7 +98,6 @@ export const decreaseCart = (cart_id) => {
     }
   };
 };
-
 const calculateSubtotal = (carts) => {
   let subtotal = 0;
   for (let key in carts) {
