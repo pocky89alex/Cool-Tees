@@ -126,7 +126,7 @@ hr {
 }
 .item-container .item-grid .item-background .item-image img {
     width: 95%;
-    height: 200px;
+    height: 250px;
     padding: 3%;
 }
 .item-container .item-grid .item-bottom {
@@ -179,7 +179,7 @@ span#count {
         height: 280px;
     }
     .item-container .item-grid .item .item-background .item-image img {
-        height: 150px;
+        height: 170px;
         width: 80%;
         padding: 25px;
     }
@@ -224,7 +224,7 @@ span#count {
         height: 350px;
     }
     .item-container .item-grid .item .item-background .item-image img {
-        height: 200px;
+        height: 250px;
         width: 85%;
     }
     .item-container .item-grid .item .item-price h5,
