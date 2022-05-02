@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
+import os
 from pathlib import Path
 import django_heroku
 import cloudinary
@@ -92,11 +92,11 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd8v897r21uclm6',
-        'USER': 'ykjyligysrycpd',
-        'HOST': 'ec2-3-209-61-239.compute-1.amazonaws.com',
+        'NAME': 'd55i3ntd7e6co1',
+        'USER': 'jrsmdlflbfyhgp',
+        'HOST': 'ec2-54-80-122-11.compute-1.amazonaws.com',
         'PORT': 5432,
-        'PASSWORD': 'b30a8552696219463bd405108f6f3465b2aeb7e84fef15a4f9ab7114f5925bf8',
+        'PASSWORD': '4c372ea758ba70d4a9d5816d4a156d474fda48133b975b2b30cc08838a8ae4f0',
     }
 }
 
@@ -148,7 +148,22 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/3.2/howto/static-files/
+# STATIC_URL = ‘/static/’
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.9/howto/static-files/
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_TMP = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
+os.makedirs(STATIC_TMP, exist_ok=True)
+os.makedirs(STATIC_ROOT, exist_ok=True)
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
@@ -157,9 +172,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 cloudinary.config( 
-  cloud_name = "dvcqt0fz8", 
-  api_key = "243225333468536", 
-  api_secret = "3tMxz9KOgjODXfLgG5td-i3b7wI" 
+  cloud_name = "manuelvazquez89", 
+  api_key = "228955746854195", 
+  api_secret = "QQzrxIwtcXqHSY12YN7XboAKVvU" 
 )
 
 REST_FRAMEWORK = {
