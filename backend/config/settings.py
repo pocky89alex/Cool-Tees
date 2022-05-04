@@ -90,23 +90,23 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd55i3ntd7e6co1',
-        'USER': 'jrsmdlflbfyhgp',
-        'HOST': 'ec2-54-80-122-11.compute-1.amazonaws.com',
-        'PORT': 5432,
-        'PASSWORD': '4c372ea758ba70d4a9d5816d4a156d474fda48133b975b2b30cc08838a8ae4f0',
-    }
-}
+     'default': {
+         'ENGINE': 'django.db.backends.postgresql',
+         'NAME': 'd1i2im6c9n6ca0',
+         'USER': 'satpaxetsdxlny',
+         'HOST': 'ec2-52-86-56-90.compute-1.amazonaws.com',
+         'PORT': 5432,
+         'PASSWORD': 'ed1c113f3927d08a3ed801f6395f2a6b21627162b1676ead3e0a30e5eea331f9',
+     }
+ }
 
-# Local Database
-# DATABASES = {
-#     'default': {
+#Local Database
+#DATABASES = {
+#    'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
 #         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+#    }
+#}
 
 # Heroku PostgreSQL Database
 django_heroku.settings(locals())
@@ -148,22 +148,22 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 # STATIC_URL = ‘/static/’
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+#BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_TMP = os.path.join(BASE_DIR, 'static')
+#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+#STATIC_TMP = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
-os.makedirs(STATIC_TMP, exist_ok=True)
-os.makedirs(STATIC_ROOT, exist_ok=True)
+#os.makedirs(STATIC_TMP, exist_ok=True)
+#os.makedirs(STATIC_ROOT, exist_ok=True)
 # Extra places for collectstatic to find static files.
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
+#STATICFILES_DIRS = (
+ #   os.path.join(BASE_DIR, 'static'),
+#)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
