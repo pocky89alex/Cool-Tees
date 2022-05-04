@@ -4,8 +4,8 @@ E commerce App, with a frontend built in React & Redux and a backend built in Dj
 ```
 ## Live Demo
 **This App uses a Heroku free plan, so I am afraid that it takes time to load the pages.**
-Check out [FRONTEND LIVE DEMO](https://cool-tees-production.herokuapp.com/) here!!
-Check out [API LIVE DEMO](https://cool-tees-backend-production.herokuapp.com/) here!!
+Check out [FRONTEND LIVE DEMO](https://manuel-frontend-production.herokuapp.com/) here!!
+Check out [API LIVE DEMO](https://manuel-backend-production.herokuapp.com/) here!!
 ## Tech used
 ```
 * Frontend : React & Redux
